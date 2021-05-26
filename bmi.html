@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <form method="POST" name="BMI">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <h1 class="text-center">
+                                ĐO CHỈ SỐ CÂN NẶNG - CHIỀU CAO (BMI) ONLINE
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <label>Nhập chiều cao của bạn:</label>
+
+                        <input type="text" class="form-control" placeholder="Tính theo m" onfocus="this.form.height.value=''"  name="height">
+                    </div>
+                    <div class="controls" style="padding-top: 10px;">
+                        <label>Nhập cân nặng của bạn:</label>
+                        <input type="text" class="form-control" placeholder="Tính theo kg" onfocus="this.form.weight.value=''" name="weight">
+
+                    </div>
+                    <div class="controls" style="padding-top: 15px;">
+                        <table class="table">
+                            <tbody><tr>
+                                <td style="text-align:center;">
+                                    <input type="button" value="KẾT QUẢ" onclick="computeform(this.form)" class="btn btn-success">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input type="reset" value="XÓA" onclick="ClearForm(this.form)" class="btn btn-warning">
+                                </td>
+                            </tr>
+                        </tbody></table>
+
+
+                    </div>
+
+                    <div class="controls" style="padding-top:10px;">
+                        <label>Kết quả BMI của bạn:</label>
+
+                        <input type="text" class="form-control" name="bmi">
+                    </div>
+
+                    <div class="controls" style="padding-top:10px;">
+                        <label>Nhận xét BMI của bạn:</label>
+
+                        <input type="text" class="form-control" name="my_mess">
+                    </div>
+
+
+    <!-- <div class="container">
+        <div class="BMI">
+            <h3>Chỉ số BMI</h3>
+            <label for="" >Nhập Cân Nặng:</label>
+            <input type="text" id="weight" placeholder="Tính theo kg">
+            <label for="" >Nhập Chiều Cao:</label>
+            <input type="text"  id="height" placeholder="Tính theo m">
+            <button onclick="Bmi()">Result</button>
+            <label for="" >Kết quả BMI của bạn:</label>
+            <input type="text"  id="result">
+            <label for="" >Nhận xét BMI của bạn:</label>
+            <input type="text"  id="result_bmi">
+        </div>
+    </div> -->
+    <script src="bmi.js"></script>
+</body>
+</html>
